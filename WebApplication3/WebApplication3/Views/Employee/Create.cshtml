@@ -1,0 +1,21 @@
+﻿@model Employee
+<form method="post">
+    <div class="border p-3 m-4">
+
+        <div class="row pb-3">
+            <h2 class="text-primary">Employee</h2>
+            <hr>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="EmployeeName"></label>
+            <input asp-for="EmployeeName" class="form-control" />
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Dob"></label>
+            <input asp-for="Dob" class="form-control" />
+        </div>
+        <button class="btn-primary" type="submit">Create</button>
+    </div>
+    <a asp-action="Index" asp-controller="Employee">Back To List</a>
+</form>
+
